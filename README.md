@@ -43,7 +43,6 @@ JavaScript (Vanilla) — Smooth horizontal scrolling
 
 Font Awesome — Icon set for scroll arrows
 
-![Preview Screenshot](images/preview.png)
 
 
 
