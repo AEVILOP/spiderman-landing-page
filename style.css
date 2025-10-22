@@ -1,0 +1,227 @@
+/* =========================================================
+   GENERAL STYLES
+========================================================= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  color: white;
+}
+
+.navbar .navbar-brand span {
+  background: #ffcc00;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar .nav-link {
+  color: white !important;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar .nav-link.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+.hero {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to right, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.1)),
+              url('images/background.jpg') center center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #ddd;
+  line-height: 1.7;
+}
+
+.movie-meta {
+  font-weight: 500;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.movie-meta .imdb {
+  background: #ffcc00;
+  color: black;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: black;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #ffd633;
+}
+
+/* =========================================================
+   MOVIE CARD SECTION
+========================================================= */
+.movie-cards-section {
+  background: transparent;
+}
+
+/* Movie cards container */
+.movie-cards {
+  display: flex;
+  gap: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+.movie-cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual movie cards */
+.movie-card {
+  background: transparent;
+  border: none;
+  min-width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+.movie-card img {
+  width: 180px;
+  height: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+}
+
+/* =========================================================
+   RELATED MOVIES SECTION
+========================================================= */
+.related-movies {
+  background: transparent;
+  position: relative;
+}
+
+.related-movies h2 {
+  color: white;
+}
+
+/* =========================================================
+   SCROLL BUTTONS
+========================================================= */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 5;
+}
+
+.scroll-btn:hover {
+  background: #ffcc00;
+  color: black;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-btn {
+  left: -15px;
+}
+
+.right-btn {
+  right: -15px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-content {
+    padding-top: 100px;
+  }
+
+  .navbar .nav-link {
+    margin-left: 0;
+  }
+
+  .movie-card img {
+    width: 140px;
+    height: 200px;
+  }
+
+  .scroll-btn {
+    display: none;
+  }
+}

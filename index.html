@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiderman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+
+  <header>
+    
+    <nav class="navbar navbar-expand-lg bg-body-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>NEW</span> MOVIE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">New Movie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Country</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Movie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">TV Series</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <main>
+     <section class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Spider man<br>No Way Home</h1>
+
+        <div class="movie-meta mb-3">
+          <span class="imdb">IMDb</span>
+          <span>8.2 (12,827) • 2021 • 1 hour 55 minutes • Sci-fi</span>
+        </div>
+
+        <p class=" fs-6 lead">
+         With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.
+        </p>
+
+        <div class="buttons mt-4">
+          <button class="btn btn-outline-light me-3">▶ Watch trailer</button>
+          <button class="btn btn-warning fw-bold text-dark">Watch now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+<!-- Carousel section -->
+<!-- Movie Cards Section -->
+<!-- Related Movies Section -->
+<section class="related-movies py-5">
+  <div class="container position-relative">
+    <h2 class="fw-bold mb-4">Related Movies</h2>
+
+    <!-- Left Scroll Button -->
+    <button class="scroll-btn left-btn" id="scrollLeft">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <!-- Movie Cards Container -->
+    <div class="movie-cards d-flex flex-row flex-nowrap overflow-auto" id="movieCards">
+      <div class="card movie-card">
+        <img src="images/5ac94e003b0dc10a59f9453b83429b5442a6d886.png" class="card-img-top" alt="Captain America">
+      </div>
+
+      <div class="card movie-card">
+        <img src="images/Rectangle 4.png" class="card-img-top" alt="Avengers Endgame">
+      </div>
+
+      <div class="card movie-card">
+        <img src="images/Rectangle 5.png" class="card-img-top" alt="Avengers Infinity War">
+      </div>
+
+      <div class="card movie-card">
+        <img src="images/Rectangle 6.png" class="card-img-top" alt="Spider-Man No Way Home">
+      </div>
+
+      <div class="card movie-card">
+        <img src="images/Rectangle 7.png" class="card-img-top" alt="Spider-Man Homecoming">
+      </div>
+
+      <div class="card movie-card">
+        <img src="images/Rectangle 8.png" class="card-img-top" alt="X-Men Apocalypse">
+      </div>
+
+      <div class="card movie-card">
+        <img src="images/Rectangle 9.png" class="card-img-top" alt="X-Men">
+      </div>
+    </div>
+
+    <!-- Right Scroll Button -->
+    <button class="scroll-btn right-btn" id="scrollRight">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+
+<!-- Font Awesome for arrows -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+<!-- Scroll Buttons JS -->
+<script src="button.js"></script>
+</body>
+</html>
